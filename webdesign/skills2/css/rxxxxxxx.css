@@ -1,0 +1,27 @@
+/*basisstijl*/
+
+body {
+    font-family: tahoma, sans-serif;
+    background-color: lightcyan;
+    color: black;
+}
+
+a:link {
+    background-color: inherit;
+    color: red;
+}
+
+a:visited {
+    background-color: inherit;
+    color: green;
+}
+
+a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+a:active {
+    background-color: inherit;
+    color: blue;
+}
