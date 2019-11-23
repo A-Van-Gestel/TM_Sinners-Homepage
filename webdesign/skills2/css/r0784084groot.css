@@ -6,14 +6,21 @@ body {
     background-image: url(../images/patroon.png);
 }
 
-div {
-    max-width: 850px;
-    margin: auto;
-    background-color: #fff;
-    padding: 25px;
-}
-
 figure {
     width: 640px;
     margin: 20px auto;
+}
+
+.allepunten {
+    margin: 0px auto;
+    max-width: 850px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.puntencontainer {
+    width: 400px;
 }
