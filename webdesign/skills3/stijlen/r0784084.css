@@ -1,3 +1,116 @@
 img {
     max-width: 100%;
 }
+
+@media (max-width: 767px) {
+    body {
+        background-color: #0d519c;
+    }
+
+    .container {
+        background-color: #f8dc00;
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        max-width: 180px;
+        border: 10px solid transparent;
+        background-color: #e32219;
+        color: white;
+    }
+
+    h2 {
+        max-width: 160px;
+        border: 10px solid transparent;
+        background-color: #e32219;
+        color: white;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: #0f0f0f;
+        color: #0f0f0f;
+    }
+
+    .container {
+        background-color: #f9f9f9;
+        padding-bottom: 5px;
+    }
+
+    nav ul {
+        max-width: 350px;
+        padding-left: 0px;
+        margin-left: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    a {
+        color: #ed1d3b;
+        font-weight: bold;
+        text-decoration: none;
+        border: 4px solid transparent;
+        transition: 0.1s;
+    }
+
+    a:hover {
+        background-color: #ed1d3b;
+        color: #f9f9f9;
+        border: 4px solid transparent;
+        border-radius: 0px;
+    }
+
+    h2 {
+        border-left: 4px solid #ed1d3b;
+        padding-left: 4px;
+    }
+
+    .gamingarticle {
+        padding-left: 4px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: #f9f9f9;
+        color: #0f0f0f;
+    }
+
+    nav ul {
+        max-width: 350px;
+        padding-left: 0px;
+        margin-left: 0px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    a {
+        color: #0f0f0f;
+        font-weight: bold;
+        text-decoration: none;
+        border: 4px solid transparent;
+        transition: 0.1s;
+    }
+
+    a:visited {
+        color: #434242;
+    }
+
+    a:hover {
+        background-color: #434242;
+        color: #f9f9f9;
+        border: 4px solid transparent;
+        border-radius: 0px;
+    }
+}
