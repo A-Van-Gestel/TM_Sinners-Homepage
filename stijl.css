@@ -29,4 +29,5 @@ img {
 
 footer {
     color: #f9f9f9;
+    max-height: 100px;
 }
