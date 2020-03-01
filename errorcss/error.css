@@ -1,0 +1,68 @@
+/* stijlregels die voor beide errorpagina's van toepassing zijn */
+@import url(bootstrap.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+    font-family: 'Odibee Sans', cursive;
+}
+
+.center-vertical {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 75px;
+}
+
+p {
+    font-size: 25px;
+    line-height: 38px;
+}
+
+h1 i {
+    font-size: 45px;
+}
+
+img {
+    /* Responsive Images */
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-dark .navbar-brand {
+    color: #f9f9f9;
+}
+
+footer {
+    color: #f9f9f9;
+}
+
+.PulseAnimation {
+    animation: pulse_scale 15s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse_scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.90);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

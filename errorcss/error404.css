@@ -1,0 +1,41 @@
+/* stijlregels die enkel voor 404 van toepassing zijn */
+body {
+    background-image: url("../errorimg/bg_normal.jpg");
+    background-attachment: fixed; /* BG Img Fixed in place */
+    background-size: cover; /* cover or contain */
+    /*padding-top: 56.25%; !* (height/width) * 100 *!*/
+}
+
+@media (min-width: 0px) {
+    /* Extra small screens */
+    .normal {
+        display: none;
+    }
+
+    .inverted {
+        display: block;
+        margin: auto;
+    }
+
+    body {
+        background-image: url("../errorimg/bg_inverted.jpg");
+        color: #f9f9f9;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Medium screens */
+    .normal {
+        display: block;
+        margin: auto;
+    }
+
+    .inverted {
+        display: none;
+    }
+
+    body {
+        background-image: url("../errorimg/bg_normal.jpg");
+        color: #212529;
+    }
+}

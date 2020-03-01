@@ -1,0 +1,34 @@
+/* stijlregels die enkel voor 403 van toepassing zijn */
+@media (min-width: 0px) {
+    /* Extra small screens */
+    .normal {
+        display: none;
+    }
+
+    .inverted {
+        display: block;
+        margin: auto;
+    }
+
+    body {
+        background-color: #212529;
+        color: #f9f9f9;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Medium screens */
+    .normal {
+        display: block;
+        margin: auto;
+    }
+
+    .inverted {
+        display: none;
+    }
+
+    body {
+        background-color: #f9f9f9;
+        color: #212529;
+    }
+}
