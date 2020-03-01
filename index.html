@@ -4,45 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Van Gestel Axel">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="stijl.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Van Gestel Axel" name="author">
+    <!--<link href="favicon.ico" rel="icon">-->
+    <link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/icons/site.webmanifest" rel="manifest">
+    <link color="#5bbad5" href="/icons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/icons/favicon.ico" rel="shortcut icon">
+    <meta content="#da532c" name="msapplication-TileColor">
+    <meta content="/icons/browserconfig.xml" name="msapplication-config">
+    <meta content="#f9f9f9" name="theme-color">
+    <link href="stijl.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <header>
-            <h1>Welkom op mijn webruimte!</h1>
-            <nav>
-                <h2>Mijn projecten</h2>
-                <ul>
-                    <li>Webdesign essentials
-                        <ul>
-                            <li><a href="webdesign/skills2/r0784084skills2.html">Skillstaak 2</a></li>
-                            <li><a href="webdesign/skills3/r0784084skills3.html">Skillstaak 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Webdesign met HTML5
-                        <ul>
-                            <li><a href="#">Uitdaging 1</a></li>
-                            <li><a href="#">Uitdaging 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <h2>Wie ben ik?</h2>
-            <p>Ik ben Van Gestel Axel, een student bij de IT Factory van Thomas More te Geel. Ik heb interesse in programmeren, namelijk Python, C++ en C#. Naast programeren spendeer ik mijn tijd in tekenen , gamen en random dingens op te zoeken op het internet.</p>
-
-        </article>
-        <footer>
-            <a href="http://www.thomasmore.be/">Thomas More</a> &copy; IT Factory = <a href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste informatica</a> + <a href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
-
-        </footer>
+<!-- Bootstrap - Navbar -->
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <!-- Bootstrap - Navbar ERROR -->
+    <span class="navbar-brand mb-0 h1"><i class="fas fa-home"></i> Homepage</span>
+    <!-- Bootstrap - Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#MijnProjecten">Mijn projecten</a>
+            <a class="nav-item nav-link" href="#WieBenIk">Wie ben ik</a>
+        </div>
     </div>
+    <!-- Bootstrap - Navbar Links -->
+</nav>
+<!-- Bootstrap - Navbar -->
 
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Welkom op mijn webruimte!</h1>
+    </div>
+</div>
+<div class="container <!--center-vertical-->">
+
+
+    <section>
+        <div class="row">
+            <div class="col-12" id="MijnProjecten">
+                <h2>Mijn projecten</h2>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <h3>Webdesign essentials</h3>
+                <ul class="list-inline">
+                    <li><a href="webdesign/skills2/r0784084skills2.html">Skillstaak 2</a></li>
+                    <li><a href="webdesign/skills3/r0784084skills3.html">Skillstaak 3</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <h3>Webdesign met HTML5</h3>
+                <ul class="list-inline">
+                    <li><a href="#">Uitdaging 1</a></li>
+                    <li><a href="#">Uitdaging 2</a></li>
+                </ul>
+            </div>
+
+            <div class="py-4 col-12" id="WieBenIk">
+                <h2>Wie ben ik?</h2>
+                <p> Ik ben Van Gestel Axel, een student bij de IT Factory van Thomas More te Geel. Ik heb interesse in
+                    programmeren, namelijk Python, C++ en C#. Naast programeren spendeer ik mijn tijd in tekenen , gamen
+                    en random dingens op te zoeken op het internet.
+                </p>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- Footer -->
+<footer class="fixed-bottom navbar navbar-expand navbar-dark bg-dark">
+    <div class="footer-copyright text-center py-2">© Axel Van Gestel - 2020
+    </div>
+    <div class="collapse navbar-collapse">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://www.thomasmore.be/">Thomas More</a>
+            <span class="navbar-text">| &copy; IT Factory =</span>
+            <a class="nav-item nav-link" href="https://www.facebook.com/ToegepasteInformatica.ThomasMoreBE/">Toegepaste
+                informatica</a>
+            <span class="navbar-text">+</span>
+            <a class="nav-item nav-link"
+               href="https://www.facebook.com/ElektronicaICT.ThomasMoreBE/">Elektronica-ICT</a>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
 </body>
 
 </html>
