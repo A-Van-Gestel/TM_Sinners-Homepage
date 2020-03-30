@@ -1,5 +1,50 @@
-@import url(/errorcss/bootstrap.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+
+:root {
+    --footer-height: 150px;
+}
+
+@media (min-width: 391px) {
+    :root {
+        --footer-height: 100px;
+    }
+}
+
+@media (min-width: 410px) {
+    :root {
+        --footer-height: 65px;
+    }
+}
+
+@media (min-width: 642px) {
+    :root {
+        --footer-height: 56px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+#page-container {
+    min-height: 100%;
+}
+
+#page-main {
+    overflow: auto;
+    padding-bottom: var(--footer-height);
+}
+
+#page-footer {
+    position: relative;
+    height: var(--footer-height);;
+    margin-top: calc(-1 * var(--footer-height));
+}
 
 .container {
     text-align: center;
@@ -7,15 +52,14 @@
 
 body {
     background-color: #f9f9f9;
-    min-height: 100%;
     position: relative;
 }
 
-body::after {
-    content: '';
-    display: block;
-    height: 100px;
-}
+/*body::after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    height: 100px;*/
+/*}*/
 
 img {
     /* Responsive Images */
@@ -29,7 +73,7 @@ img {
 
 footer {
     color: #f9f9f9;
-    max-height: 100px;
+    max-height: var(--footer-height);
 }
 
 footer a {
