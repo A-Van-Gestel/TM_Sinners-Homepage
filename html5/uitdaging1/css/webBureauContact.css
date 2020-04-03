@@ -1,0 +1,51 @@
+:root {
+    --footer-height: 115px;
+}
+
+html, body {
+    height: 100%;
+}
+
+#php-container {
+    min-height: 100%;
+}
+
+#php-main {
+    overflow: auto;
+    padding-bottom: var(--footer-height);
+}
+
+.php-background {
+    background: linear-gradient(to bottom, rgba(57, 40, 28, 0.8) 0, rgba(24, 60, 24, 0.6) 100%),url(../img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#php-footer {
+    position: relative;
+    height: var(--footer-height);
+    margin-top: calc(-1 * var(--footer-height));
+}
+
+.overflow-wrap {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.bg-color-main {
+    background-color: var(--main-bg-color);
+}
+
+.jumbotron {
+    border-radius: 0;
+}
+
+@media (max-width: 991px) {
+    .php-header {
+        padding-top: 100px;
+        padding-bottom: 35px;
+    }
+}
