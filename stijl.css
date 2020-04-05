@@ -27,25 +27,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100%;
-}
-
-#page-container {
-    min-height: 100%;
-}
-
-#page-main {
-    overflow: auto;
-    padding-bottom: var(--footer-height);
-}
-
-#page-footer {
-    position: relative;
-    height: var(--footer-height);;
-    margin-top: calc(-1 * var(--footer-height));
-}
-
 .container {
     text-align: center;
 }
@@ -54,12 +35,6 @@ body {
     background-color: #f9f9f9;
     position: relative;
 }
-
-/*body::after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    height: 100px;*/
-/*}*/
 
 img {
     /* Responsive Images */

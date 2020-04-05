@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>404 - Not Found</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="/css/basic_footer.css">
     <link href="/errorcss/error.css" rel="stylesheet">
     <link href="/errorcss/error404.css" rel="stylesheet">
 </head>
@@ -12,44 +13,49 @@
 <body>
 <!-- Errorpagina met duidelijke errormelding en responsieve background-image, conform opdracht-->
 
-<!-- Bootstrap - Navbar -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
-    <!-- Bootstrap - Navbar ERROR -->
-    <span class="navbar-brand mb-0 h1"><i class="fas fa-exclamation-triangle"></i> ERROR 404</span>
-    <!-- Bootstrap - Navbar Links -->
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <!-- Bootstrap - Navbar Link to Homepage -->
-            <a class="nav-item nav-link" href="./index.html">Homepage</a>
+<div id="page-container">
+    <!-- Bootstrap - Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <!-- Bootstrap - Navbar ERROR -->
+        <span class="navbar-brand mb-0 h1"><i class="fas fa-exclamation-triangle"></i> ERROR 404</span>
+        <!-- Bootstrap - Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!-- Bootstrap - Navbar Link to Homepage -->
+                <a class="nav-item nav-link" href="./index.html">Homepage</a>
+            </div>
         </div>
+        <!-- Bootstrap - Navbar Links -->
+    </nav>
+    <!-- Bootstrap - Navbar -->
+
+    <!-- Main Content of page -->
+    <div id="page-main">
+        <section>
+            <div class="container my-5">
+                <!-- Pulsating Animation -->
+                <div class="PulseAnimation">
+                    <h1><i class="fas fa-exclamation-triangle"></i> ERROR 404 - Not Found <i
+                            class="fas fa-exclamation-triangle"></i>
+                    </h1>
+
+                    <p>De pagina die u zocht was niet gevonden!</p>
+
+                    <p><img alt="Error 404 Face" class="normal" height="400" src="/errorimg/img_404_Error.png"
+                            width="400"/>
+                        <img alt="Error 404 Face" class="inverted" height="400"
+                             src="/errorimg/img_404_Error_inverted.png"
+                             width="400"/>
+                    </p>
+                </div>
+                <!-- Pulsating Animation -->
+            </div>
+        </section>
+        <!-- Main Content of page -->
     </div>
-    <!-- Bootstrap - Navbar Links -->
-</nav>
-<!-- Bootstrap - Navbar -->
-
-<!-- Main Content of page -->
-<section>
-    <div class="container center-vertical">
-        <!-- Pulsating Animation -->
-        <div class="PulseAnimation">
-            <h1><i class="fas fa-exclamation-triangle"></i> ERROR 404 - Not Found <i
-                    class="fas fa-exclamation-triangle"></i>
-            </h1>
-
-            <p>De pagina die u zocht was niet gevonden!</p>
-
-            <p><img alt="Error 404 Face" class="normal" height="400" src="/errorimg/img_404_Error.png" width="400"/>
-                <img alt="Error 404 Face" class="inverted" height="400" src="/errorimg/img_404_Error_inverted.png"
-                     width="400"/>
-            </p>
-        </div>
-        <!-- Pulsating Animation -->
-    </div>
-</section>
-<!-- Main Content of page -->
-
+</div>
 <!-- Footer -->
-<footer class="fixed-bottom navbar navbar-dark bg-dark">
+<footer id="page-footer" class="navbar navbar-dark bg-dark">
     <div class="footer-copyright text-center py-2">© Axel Van Gestel - 2020
     </div>
 </footer>
