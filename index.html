@@ -26,14 +26,34 @@
 <div id="page-container">
     <!-- Bootstrap - Navbar -->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <!-- Bootstrap - Navbar ERROR -->
+        <!-- Bootstrap - Navbar Brand -->
         <span class="navbar-brand mb-0 h1"><i class="fas fa-home"></i> Homepage</span>
         <!-- Bootstrap - Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#MijnProjecten">Mijn projecten</a>
-                <a class="nav-item nav-link" href="#WieBenIk">Wie ben ik</a>
-            </div>
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navbarNavAltMarkup">
+            <!-- Navbar Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#MijnProjecten">Mijn projecten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#WieBenIk">Wie ben ik</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar Center -->
+<!--        <div class="mx-auto order-0">-->
+<!--            <a class="navbar-brand mx-auto" href="#">Navbar 2</a>-->
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+<!--        </div>-->
+        <!-- Navbar Right -->
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio">Portfolio</a>
+                </li>
+            </ul>
         </div>
         <!-- Bootstrap - Navbar Links -->
     </nav>
