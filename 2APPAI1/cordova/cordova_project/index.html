@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,15 +9,15 @@
     <meta name="description" content="Axel Van Gestel's Cordova Project">
     <meta name="keywords" content="Cordova, Android, APK, ThomasMore, Student, HTML5, CSS">
     <!--<link href="favicon.ico" rel="icon">-->
-    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="/site.webmanifest" rel="manifest">
-    <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon">
-    <link href="/favicon.ico" rel="shortcut icon">
-    <meta content="#da532c" name="msapplication-TileColor">
-    <meta content="/browserconfig.xml" name="msapplication-config">
-    <meta content="#f9f9f9" name="theme-color">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/css/basic_footer.css">
     <link rel="stylesheet" href="/stijl.css">
 
@@ -30,7 +30,7 @@
 </head>
 
 <body>
-<div id="page-container">
+<div id="page-container" class="mb-3">
     <!-- Bootstrap - Navbar -->
     <nav class="navbar navbar-expand navbar-dark bg-dark">
         <!-- Bootstrap - Navbar Brand -->
@@ -40,22 +40,25 @@
             <!-- Navbar Left -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#Info">Info</a>
+                    <a class="nav-link d-none d-sm-block" href="#images">Images</a>
+                    <a class="nav-link d-sm-none" href="#images"><i class="fas fa-images"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-sm-block" href="#text">Info</a>
+                    <a class="nav-link d-sm-none" href="#text"><i class="fas fa-info"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-sm-block" href="#download">Download</a>
+                    <a class="nav-link d-sm-none" href="#download"><i class="fas fa-download"></i></a>
                 </li>
             </ul>
         </div>
-        <!--         Navbar Center-->
-        <!--                <div class="mx-auto order-0">-->
-        <!--                    <a class="navbar-brand mx-auto" href="#">Navbar 2</a>-->
-        <!--                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">-->
-        <!--                        <span class="navbar-toggler-icon"></span>-->
-        <!--                    </button>-->
-        <!--                </div>-->
-        <!-- Navbar Right -->
+
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Homepage</a>
+                    <a class="nav-link d-none d-sm-block" href="/">Homepage</a>
+                    <a class="nav-link d-sm-none" href="/"><i class="fas fa-home"></i></a>
                 </li>
             </ul>
         </div>
@@ -66,19 +69,18 @@
     <div id="page-main">
         <div class="jumbotron">
             <div class="container">
-                <h1>Cordova Project (WIP)</h1>
+                <h1>Girls Frontline Information Bank</h1>
+                <p>Cordova Project</p>
             </div>
         </div>
-        <div class="container <!--center-vertical-->">
 
 
+        <div class="container">
             <section>
-                <div class="row">
-                    <div class="col-12" id="Info">
-                        <h2>Info</h2>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <h3>Images and WIP</h3>
+                <div class="row justify-content-center">
+                    <div id="images" class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                        <h3>Preview images</h3>
+                        <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
                         <div id="carousel_Images" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carousel_Images" data-slide-to="0" class="active"></li>
@@ -114,12 +116,28 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <h3>Text and stuff</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem dignissimos dolores et expedita, facere illum maxime minima minus molestiae mollitia nam natus nihil nulla obcaecati ratione saepe soluta voluptates? At deserunt dolor dolorem iure neque! Aperiam at autem dicta et labore numquam quis sit tempora ullam voluptatem. Exercitationem, vel!</p>
+
+                    <div id="text" class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                        <h3>General information</h3>
+                        <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
+                        <p class="text-justify">Girls Frontline Information Bank is a wiki like app, you can look up the general information of a T-doll and view there stats (and soon hopefully even more). You can easily favorite your favorite T-dolls for easy lookup and search T-dolls by build time so you know wish doll is in production.</p>
+                        <h5>What you can expect</h5>
+                        <ul class="list-unstyled">
+                            <li>View general information (T-dolls)</li>
+                            <li>View stats (T-dolls)</li>
+                            <li>Favorite system (T-dolls)</li>
+                            <li>Search by Build Time (T-dolls)</li>
+                            <li>Always up-to-date by using the GFL-core API</li>
+                        </ul>
+                        <h5>What you shouldn't expect</h5>
+                        <ul class="list-unstyled">
+                            <li>Bugs (hopefully)</li>
+                        </ul>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <h3>APK Download and Debug</h3>
+
+                    <div id="download" class="col-sm-12 col-md-6 col-lg-4">
+                        <h3>APK Download</h3>
+                        <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
                         <ul class="list-inline">
                             <li><a href="resources/app-debug.apk" target="_blank">Download APK</a></li>
                         </ul>
