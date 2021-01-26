@@ -57,6 +57,12 @@
                         <span class="d-sm-none"><i class="fas fa-download"></i></span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#online">
+                        <span class="d-none d-sm-block">Online</span>
+                        <span class="d-sm-none"><i class="fas fa-globe"></i></span>
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -78,7 +84,7 @@
         <div class="jumbotron">
             <div class="container">
                 <h1>Girls' Frontline Information Bank</h1>
-                <p>Created by Axel Van Gestel</p>
+                <p>Created by Axel Van Gestel <a href="https://github.com/A-Van-Gestel/2APPAI1-CORDOVA-Project_Cordova_2020-2021" target="_blank" rel="noopener" class="text-muted"><i class="fab fa-github"></i></a></p>
             </div>
         </div>
 
@@ -143,12 +149,25 @@
                         </ul>
                     </div>
 
-                    <div id="download" class="col-sm-12 col-md-6 col-lg-4">
-                        <h3>APK Download</h3>
-                        <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
-                        <ul class="list-inline">
-                            <li><a href="resources/app-debug.apk" target="_blank" rel="noopener">Download APK (Ver. 0.8.6.1)</a></li>
-                        </ul>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="row">
+                            <div id="download" class="col-12 mb-3">
+                                <h3>APK Download</h3>
+                                <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
+                                <ul class="list-inline">
+                                    <li><a href="https://github.com/A-Van-Gestel/2APPAI1-CORDOVA-Project_Cordova_2020-2021/releases/latest/download/app-debug.apk" target="_blank" rel="noopener">Download APK (Latest on GitHub)</a></li>
+                                    <li><a href="resources/app-debug.apk" target="_blank" rel="noopener">Download APK (Ver. 0.8.6.3)</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="online" class="col-12">
+                                <h3>Online Version</h3>
+                                <div class="dropdown-divider" style="border-color: lightgrey; width: 50%; margin-left: auto; margin-right: auto"></div>
+                                <ul class="list-inline">
+                                    <li><a href="online/" target="_blank" rel="noopener">Link (Should be up-to-date)</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -175,5 +194,5 @@
 <!-- Footer -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
